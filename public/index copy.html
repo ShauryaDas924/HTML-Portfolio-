@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="author" content="Shaurya Das">
+        <meta name="description" content=" This page contains all the things I am learning how to create as I learn HTML">
+     <title>My First Web Page</title>
+     <link rel="icon" href="html5.png" type="image/x-icon">
+     <link rel="stylesheet" href="main.css" type="text/css">
+    </head>
+    <body> 
+          <header>
+        <h1>My Goals For the Year</h1>
+
+         <nav aria-label="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#html">Learning HTML</a>
+                </li>
+                <li>
+                    <a href="#Motivation">Motivation To Make App</a>
+                </li>
+                <li>
+                    <a href="#Plan">Plan To Make App</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+         </nav>
+        </header>
+        <hr>
+        <main>
+<article id="html">
+        <h2>I'm Ready to learn HTML</h2>
+        <p>This is my first web page.</p>
+        <section>
+            <h3>HTML5</h3>
+       <img src = "img/html_logo_300x300.png" alt="HTML5 Logo" title ="I Am Learning HTML5" width="300" height = "300">
+         <figure>
+            <figcaption> An Example of HTML5 code</figcaption>
+            <p>
+                <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+            </p>
+         </figure>
+        </section>
+        <section>
+        <h3>My Daily Schedule</h3>
+        <p>Let me tell you how:</p>
+            <ol>
+            <li>...I learned more about web dev.</li>
+            <li>...I plan out my schedule.</li>
+            <li>...I use resources from <abbr title="Mozilla Devoloper Network">
+                <a href="https://developer.mozilla.org/">MDN</a>
+            </abbr>.</li>
+
+        </ol>
+        <aside>
+            <details>
+                <summary>Guess the <mark>numbers of hours</mark> I code per day</summary>
+                <p>I start at <time datetime ="11:30">11:30 Am</time> and do about <time datetime = "PT3H">1-2 hours</time> every day.</p>
+            </details>
+        </aside>
+        <br>
+        <table>
+            <tr>
+                <td>
+                    <time datetime="11:30">11:30am</time>-<time datetime ="13:30">1:30pm</time>
+                </td>
+                <td>Write Code</td>
+            </tr>
+            <tr>
+                <td>
+                    <time datetime="13:30">1:30pm</time>-<time datetime ="14:30">2:30pm</time>
+                </td>
+                <td>Eat Lunch</td>
+            </tr>
+            <tr>
+                <td>
+                    <time datetime="14:30">2:30pm</time>-<time datetime ="16:30">3:30pm</time>
+                </td>
+                <td>Study for Other Classes</td>
+            </tr>
+        </table>
+    </section>
+</article>
+        <hr>
+        <section>
+            <h2>My Motivation</h2>
+        <article id="Motivation">
+        <h2>I Will Make My App</h2>
+        <p>I Want To <em>Help People Overcome Bad Habits</em>.</p>
+        <p>This Is Deeply Personal To Me</p>
+        <p>I want to start my workspace in this location:</p>
+        <address>
+            3800 Gaylord Pkwy suite 100, Frisco, TX 75034
+        </address>
+   
+         <!-- TODO: Brainstorm More Ideas-->
+    </article>
+</section>
+        <article id="Plan">
+            <h2>My Plan to Achieve This</h2>
+            <section>
+        <h4>First I will Breainstorm Some Ideas</h4>
+        <ul>
+        
+       <li><p>My First idea is to make a <strong>journeling prompter</strong></p>
+        <figure>
+        <img src ="img/IMG_9934.JPG" alt = "My Journaling motivation" title =" My Journaling motivation" width ="400" height = "225" loading = lazy>
+        <figcaption>
+             Me Journaling an easy study method
+        </figcaption>
+    </figure>
+        <li><p>My Second idea Is To Allow People To Compare Streaks Of Good Ideas</p> </li>
+    </ul>
+</section>
+<section>
+          <h3>Some Key Issues To Consider</h3>
+          <dl>
+            <dt>Willpower Building</dt>
+            <dd>It is Important to Build Willpoer <strong>One Step At A Time</strong></dd>
+
+            <dt>Enviroment Consideration</dt>
+            <dd>It is Important To consider Where Your Bad Habit Takes Place Most</dd>
+
+            <dt>Deadline Setting</dt>
+            <dd>Setting A Deadline to Meet Like A Weekend Can Significantly Boost WillPower</dd>
+          </dl>
+</section>
+        </article>
+
+        <hr>
+        <article id="contact">
+            <h2>Contact Me</h2>
+            <p>I Would Really Like To Here From You!</p>
+
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal Info</legend>
+                <p>
+                <label for="firstName">First Name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required 
+                autofocus>
+               </p>
+               <p>
+                <label for="lastName">Last Name:</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Pork" autocomplete="on" required>
+               </p>
+               <p>
+                <label for="password">Password:</label>
+                <input type="password" name="password" id="password" placeholder="your secret" required>
+               </p>
+               <p>
+                <label for="phone">Phone:</label>
+                <input type="tel" name="phone" id="phone" placeholder="5555555555" 
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+               </p>
+               <p>
+                <label for="decade">Favorite Decade:</label>
+                <input type="number" name="decade" id="decade" min ="1950" max="2020" step="10" value="1980">
+               </p>
+               <p>
+                <label for="subject">Favorite Subect in School</label>
+                <select name="subject" id="subject" multiple size ="5">
+                    <optgroup label ="STEM"> 
+                    <option value="math">Math</option>
+                    <option value="science">Science</option>
+                </optgroup>
+                <optgroup label ="Social Fields">  
+                    <option value="English">English</option>
+                    <option value="history">History</option>
+                    <option value="government">Government</option>
+                    <option value="economics">Economics</option>
+                </optgroup>
+                    <option value="other">Other</option>
+                </select>
+               </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>What is your Favorite food?</legend>
+                <p>
+                    <input type="radio" name="food" id = "tacos" value="tacos">
+                    <label for="tacos">Tacos</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id = "pizza" value="pizza">
+                    <label for="pizza">Pizza</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id = "other" value="other">
+                    <label for="other">Other</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Do you have pets?</legend>
+                <p>
+                    <input type="checkbox" name="pets" id="dog" value="dog">
+                    <label for="dog">Dog</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="cat" value="cat">
+                    <label for="cat">Cat</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="snake" value="snake">
+                    <label for="snake">Snake</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="otherPet" value="otherPet">
+                    <label for="otherPet">Other</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Send Me A Note</legend>
+                <label for="message">Your Message:</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+            <button type ="reset">Reset</button>
+            
+            </form>
+        </article>
+    </main>
+        <hr>
+        <footer>
+            <p>
+        &lt;&lt;&lt; &copy; <a href="about.html">Shaurya Das</a> &gt;&gt;&gt;
+    </p>
+        <p>
+            <a href="#">Back To Top</a>
+        </p>
+    </footer>
+    </body>
+</html>
